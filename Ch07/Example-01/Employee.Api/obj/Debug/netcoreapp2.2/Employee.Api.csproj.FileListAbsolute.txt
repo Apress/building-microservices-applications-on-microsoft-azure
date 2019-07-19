@@ -1,0 +1,14 @@
+D:\Data\Azure\book\Chapter-07\Example-01\Employee.Api\bin\Debug\netcoreapp2.2\Employee.Api.deps.json
+D:\Data\Azure\book\Chapter-07\Example-01\Employee.Api\bin\Debug\netcoreapp2.2\Employee.Api.runtimeconfig.json
+D:\Data\Azure\book\Chapter-07\Example-01\Employee.Api\bin\Debug\netcoreapp2.2\Employee.Api.runtimeconfig.dev.json
+D:\Data\Azure\book\Chapter-07\Example-01\Employee.Api\bin\Debug\netcoreapp2.2\Employee.Api.dll
+D:\Data\Azure\book\Chapter-07\Example-01\Employee.Api\bin\Debug\netcoreapp2.2\Employee.Api.pdb
+D:\Data\Azure\book\Chapter-07\Example-01\Employee.Api\obj\Debug\netcoreapp2.2\Employee.Api.csprojAssemblyReference.cache
+D:\Data\Azure\book\Chapter-07\Example-01\Employee.Api\obj\Debug\netcoreapp2.2\Employee.Api.csproj.CoreCompileInputs.cache
+D:\Data\Azure\book\Chapter-07\Example-01\Employee.Api\obj\Debug\netcoreapp2.2\Employee.Api.RazorAssemblyInfo.cache
+D:\Data\Azure\book\Chapter-07\Example-01\Employee.Api\obj\Debug\netcoreapp2.2\Employee.Api.RazorAssemblyInfo.cs
+D:\Data\Azure\book\Chapter-07\Example-01\Employee.Api\obj\Debug\netcoreapp2.2\Employee.Api.AssemblyInfoInputs.cache
+D:\Data\Azure\book\Chapter-07\Example-01\Employee.Api\obj\Debug\netcoreapp2.2\Employee.Api.AssemblyInfo.cs
+D:\Data\Azure\book\Chapter-07\Example-01\Employee.Api\obj\Debug\netcoreapp2.2\Employee.Api.RazorTargetAssemblyInfo.cache
+D:\Data\Azure\book\Chapter-07\Example-01\Employee.Api\obj\Debug\netcoreapp2.2\Employee.Api.dll
+D:\Data\Azure\book\Chapter-07\Example-01\Employee.Api\obj\Debug\netcoreapp2.2\Employee.Api.pdb

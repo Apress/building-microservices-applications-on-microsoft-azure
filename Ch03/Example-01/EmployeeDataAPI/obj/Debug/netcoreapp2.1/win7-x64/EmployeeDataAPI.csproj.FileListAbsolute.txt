@@ -1,0 +1,17 @@
+D:\Data\Azure\book\Chapter-03\EmployeeDataAPI\obj\Debug\netcoreapp2.1\win7-x64\EmployeeDataAPI.csproj.CoreCompileInputs.cache
+D:\Data\Azure\book\Chapter-03\EmployeeDataAPI\obj\Debug\netcoreapp2.1\win7-x64\EmployeeDataAPI.AssemblyInfoInputs.cache
+D:\Data\Azure\book\Chapter-03\EmployeeDataAPI\obj\Debug\netcoreapp2.1\win7-x64\EmployeeDataAPI.AssemblyInfo.cs
+D:\Data\Azure\book\Chapter-03\EmployeeDataAPI\bin\Debug\netcoreapp2.1\win7-x64\hostpolicy.dll
+D:\Data\Azure\book\Chapter-03\EmployeeDataAPI\bin\Debug\netcoreapp2.1\win7-x64\hostfxr.dll
+D:\Data\Azure\book\Chapter-03\EmployeeDataAPI\bin\Debug\netcoreapp2.1\win7-x64\EmployeeDataAPI.exe
+D:\Data\Azure\book\Chapter-03\EmployeeDataAPI\bin\Debug\netcoreapp2.1\win7-x64\EmployeeDataAPI.deps.json
+D:\Data\Azure\book\Chapter-03\EmployeeDataAPI\bin\Debug\netcoreapp2.1\win7-x64\EmployeeDataAPI.runtimeconfig.json
+D:\Data\Azure\book\Chapter-03\EmployeeDataAPI\bin\Debug\netcoreapp2.1\win7-x64\EmployeeDataAPI.runtimeconfig.dev.json
+D:\Data\Azure\book\Chapter-03\EmployeeDataAPI\bin\Debug\netcoreapp2.1\win7-x64\EmployeeDataAPI.dll
+D:\Data\Azure\book\Chapter-03\EmployeeDataAPI\obj\Debug\netcoreapp2.1\win7-x64\EmployeeDataAPI.csprojAssemblyReference.cache
+D:\Data\Azure\book\Chapter-03\EmployeeDataAPI\obj\Debug\netcoreapp2.1\win7-x64\EmployeeDataAPI.RazorAssemblyInfo.cache
+D:\Data\Azure\book\Chapter-03\EmployeeDataAPI\obj\Debug\netcoreapp2.1\win7-x64\EmployeeDataAPI.RazorAssemblyInfo.cs
+D:\Data\Azure\book\Chapter-03\EmployeeDataAPI\obj\Debug\netcoreapp2.1\win7-x64\EmployeeDataAPI.RazorTargetAssemblyInfo.cache
+D:\Data\Azure\book\Chapter-03\EmployeeDataAPI\bin\Debug\netcoreapp2.1\win7-x64\EmployeeDataAPI.pdb
+D:\Data\Azure\book\Chapter-03\EmployeeDataAPI\obj\Debug\netcoreapp2.1\win7-x64\EmployeeDataAPI.dll
+D:\Data\Azure\book\Chapter-03\EmployeeDataAPI\obj\Debug\netcoreapp2.1\win7-x64\EmployeeDataAPI.pdb

@@ -1,0 +1,67 @@
+﻿@model EmployeeViewModel
+
+@{
+    ViewData["Title"] = "Sample Employee Interface";
+}
+
+<div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-8 col-xs-offset-2 text-center">
+                <h2>Sample Employee Interface</h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-8 col-xs-offset-2">
+                <form asp-action="Create" class="col-xs-12 center-block">
+                    <div class="col-xs-6 form-group">
+                        <div class="form-group">
+                            <label asp-for="Employee.Name" class="control-label"></label>
+                            <input asp-for="Employee.Name" maxlength="100" class="form-control" />
+                            <span asp-validation-for="Employee.Name" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Employee.Designation" class="control-label"></label>
+                            <input asp-for="Employee.Designation" maxlength="100" class="form-control" />
+                            <span asp-validation-for="Employee.Designation" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Employee.Mobile" class="control-label"></label>
+                            <input asp-for="Employee.Mobile" maxlength="10" class="form-control" />
+                            <span asp-validation-for="Employee.Mobile" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Create" class="btn btn-default" />
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <hr />
+        <div class="row">
+            <div class="col-xs-8 col-xs-offset-2">
+                @foreach (var item in Model.EmployeeList)
+                {
+                    <div class="row">
+                        <div class="col-xs-2">
+                            @Html.DisplayFor(modelItem => item.Id)
+                        </div>
+                        <div class="col-xs-2">
+                            @Html.DisplayFor(modelItem => item.Name)
+                        </div>
+                        <div class="col-xs-2">
+                            @Html.DisplayFor(modelItem => item.Designation)
+                        </div>
+                        <div class="col-xs-2">
+                            @Html.DisplayFor(modelItem => item.Mobile)
+                        </div>
+                        <div class="col-xs-2">
+                            <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>

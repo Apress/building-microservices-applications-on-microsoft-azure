@@ -1,0 +1,1 @@
+D:\Data\Azure\book\Chapter-03\Example-02\employeespringascontainer\obj\x64\Debug\employeespringascontainer.sfproj.CoreCompileInputs.cache

@@ -1,0 +1,35 @@
+{
+  "ReRoutes": [
+    {
+      "DownstreamPathTemplate": "/api/employee",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 62550
+        }
+      ],
+      "UpstreamPathTemplate": "/employee",
+      "UpstreamHttpMethod": [ "Get" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "AzureAdAuthenticationScheme",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/values",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 62550
+        }
+      ],
+      "UpstreamPathTemplate": "/value",
+      "UpstreamHttpMethod": [ "Get" ]
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "http://localhost:62420"
+  }
+}

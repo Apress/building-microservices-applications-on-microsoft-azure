@@ -1,0 +1,1 @@
+D:\Data\Azure\book\Chapter-03\Employee\obj\x64\Debug\Employee.sfproj.CoreCompileInputs.cache

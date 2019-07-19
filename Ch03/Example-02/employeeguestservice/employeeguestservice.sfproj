@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" InitialTargets=";ValidateMSBuildFiles">
+  <Import Project="..\packages\Microsoft.VisualStudio.Azure.Fabric.MSBuild.1.6.7\build\Microsoft.VisualStudio.Azure.Fabric.Application.props" Condition="Exists('..\packages\Microsoft.VisualStudio.Azure.Fabric.MSBuild.1.6.7\build\Microsoft.VisualStudio.Azure.Fabric.Application.props')" />
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>90d465f3-8042-4329-b97f-6d2cbc6a05a7</ProjectGuid>
+    <ProjectVersion>2.4</ProjectVersion>
+    <MinToolsVersion>1.5</MinToolsVersion>
+    <SupportedMSBuildNuGetPackageVersion>1.6.7</SupportedMSBuildNuGetPackageVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ApplicationPackageRoot\ApplicationManifest.xml" />
+    <None Include="ApplicationParameters\Cloud.xml" />
+    <None Include="ApplicationParameters\Local.1Node.xml" />
+    <None Include="ApplicationParameters\Local.5Node.xml" />
+    <None Include="PublishProfiles\Cloud.xml" />
+    <None Include="PublishProfiles\Local.1Node.xml" />
+    <None Include="PublishProfiles\Local.5Node.xml" />
+    <None Include="Scripts\Deploy-FabricApplication.ps1" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\employeespringservice-0.0.1-SNAPSHOT.jar" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\ASSEMBLY_EXCEPTION" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\bin\attach.dll" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\bin\awt.dll" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\bin\dt_shmem.dll" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\bin\dt_socket.dll" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\bin\fontmanager.dll" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\bin\freetype.dll" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\bin\hprof.dll" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\bin\instrument.dll" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\bin\j2pcsc.dll" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\bin\j2pkcs11.dll" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\bin\jaas_nt.dll" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\bin\jabswitch.exe" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\bin\java-rmi.exe" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\bin\java.dll" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\bin\java.exe" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\bin\JavaAccessBridge-64.dll" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\bin\javaw.exe" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\bin\java_crw_demo.dll" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\bin\jawt.dll" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\bin\JAWTAccessBridge-64.dll" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\bin\jdwp.dll" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\bin\jjs.exe" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\bin\jli.dll" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\bin\jpeg.dll" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\bin\jsdt.dll" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\bin\jsound.dll" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\bin\jsoundds.dll" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\bin\keytool.exe" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\bin\kinit.exe" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\bin\klist.exe" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\bin\ktab.exe" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\bin\lcms.dll" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\bin\management.dll" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\bin\mlib_image.dll" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\bin\msvcr100.dll" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\bin\net.dll" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\bin\nio.dll" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\bin\npt.dll" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\bin\ojdkbuild_giflib.dll" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\bin\ojdkbuild_libjpeg-turbo.dll" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\bin\ojdkbuild_libpng.dll" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\bin\ojdkbuild_nss.dll" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\bin\orbd.exe" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\bin\pack200.exe" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\bin\policytool.exe" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\bin\rmid.exe" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\bin\rmiregistry.exe" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\bin\sawindbg.dll" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\bin\servertool.exe" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\bin\server\jvm.dll" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\bin\server\Xusage.txt" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\bin\splashscreen.dll" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\bin\sunec.dll" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\bin\sunmscapi.dll" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\bin\tnameserv.exe" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\bin\unpack.dll" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\bin\unpack200.exe" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\bin\verify.dll" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\bin\w2k_lsa_auth.dll" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\bin\WindowsAccessBridge-64.dll" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\bin\zip.dll" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\lib\accessibility.properties" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\lib\amd64\jvm.cfg" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\lib\calendars.properties" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\lib\charsets.jar" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\lib\classlist" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\lib\cmm\CIEXYZ.pf" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\lib\cmm\GRAY.pf" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\lib\cmm\LINEAR_RGB.pf" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\lib\cmm\PYCC.pf" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\lib\cmm\sRGB.pf" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\lib\content-types.properties" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\lib\currency.data" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\lib\ext\access-bridge-64.jar" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\lib\ext\cldrdata.jar" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\lib\ext\dnsns.jar" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\lib\ext\jaccess.jar" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\lib\ext\localedata.jar" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\lib\ext\meta-index" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\lib\ext\nashorn.jar" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\lib\ext\sunec.jar" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\lib\ext\sunjce_provider.jar" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\lib\ext\sunmscapi.jar" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\lib\ext\sunpkcs11.jar" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\lib\ext\zipfs.jar" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\lib\flavormap.properties" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\lib\fontconfig.bfc" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\lib\fontconfig.properties.src" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\lib\fonts\AUTHORS" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\lib\fonts\DejaVuSans-Bold.ttf" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\lib\fonts\DejaVuSans-BoldOblique.ttf" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\lib\fonts\DejaVuSans-ExtraLight.ttf" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\lib\fonts\DejaVuSans-Oblique.ttf" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\lib\fonts\DejaVuSans.ttf" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\lib\fonts\DejaVuSansCondensed-Bold.ttf" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\lib\fonts\DejaVuSansCondensed-BoldOblique.ttf" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\lib\fonts\DejaVuSansCondensed-Oblique.ttf" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\lib\fonts\DejaVuSansCondensed.ttf" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\lib\fonts\DejaVuSansMono-Bold.ttf" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\lib\fonts\DejaVuSansMono-BoldOblique.ttf" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\lib\fonts\DejaVuSansMono-Oblique.ttf" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\lib\fonts\DejaVuSansMono.ttf" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\lib\fonts\DejaVuSerif-Bold.ttf" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\lib\fonts\DejaVuSerif-BoldItalic.ttf" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\lib\fonts\DejaVuSerif-Italic.ttf" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\lib\fonts\DejaVuSerif.ttf" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\lib\fonts\DejaVuSerifCondensed-Bold.ttf" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\lib\fonts\DejaVuSerifCondensed-BoldItalic.ttf" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\lib\fonts\DejaVuSerifCondensed-Italic.ttf" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\lib\fonts\DejaVuSerifCondensed.ttf" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\lib\fonts\LICENSE" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\lib\fonts\README" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\lib\hijrah-config-umalqura.properties" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\lib\images\cursors\cursors.properties" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\lib\images\cursors\invalid32x32.gif" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\lib\images\cursors\win32_CopyDrop32x32.gif" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\lib\images\cursors\win32_CopyNoDrop32x32.gif" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\lib\images\cursors\win32_LinkDrop32x32.gif" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\lib\images\cursors\win32_LinkNoDrop32x32.gif" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\lib\images\cursors\win32_MoveDrop32x32.gif" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\lib\images\cursors\win32_MoveNoDrop32x32.gif" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\lib\jce.jar" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\lib\jsse.jar" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\lib\jvm.hprof.txt" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\lib\logging.properties" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\lib\management-agent.jar" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\lib\management\jmxremote.access" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\lib\management\jmxremote.password.template" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\lib\management\management.properties" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\lib\management\snmp.acl.template" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\lib\meta-index" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\lib\net.properties" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\lib\psfont.properties.ja" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\lib\psfontj2d.properties" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\lib\resources.jar" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\lib\rt.jar" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\lib\security\blacklisted.certs" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\lib\security\cacerts" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\lib\security\java.policy" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\lib\security\java.security" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\lib\security\policy\limited\local_policy.jar" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\lib\security\policy\limited\US_export_policy.jar" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\lib\security\policy\unlimited\local_policy.jar" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\lib\security\policy\unlimited\US_export_policy.jar" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\lib\sound.properties" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\lib\tzdb.dat" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\lib\tzmappings" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\LICENSE" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\THIRD_PARTY_README" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\Config\Settings.xml" />
+    <Content Include="ApplicationPackageRoot\employeeguestservicePkg\ServiceManifest.xml" />
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ApplicationPackageRoot\employeeguestservicePkg\Code\jre\lib\applet\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
+  <PropertyGroup>
+    <ApplicationProjectTargetsPath>$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Service Fabric Tools\Microsoft.VisualStudio.Azure.Fabric.ApplicationProject.targets</ApplicationProjectTargetsPath>
+  </PropertyGroup>
+  <Import Project="$(ApplicationProjectTargetsPath)" Condition="Exists('$(ApplicationProjectTargetsPath)')" />
+  <Import Project="..\packages\Microsoft.VisualStudio.Azure.Fabric.MSBuild.1.6.7\build\Microsoft.VisualStudio.Azure.Fabric.Application.targets" Condition="Exists('..\packages\Microsoft.VisualStudio.Azure.Fabric.MSBuild.1.6.7\build\Microsoft.VisualStudio.Azure.Fabric.Application.targets')" />
+  <Target Name="ValidateMSBuildFiles">
+    <Error Condition="!Exists('..\packages\Microsoft.VisualStudio.Azure.Fabric.MSBuild.1.6.7\build\Microsoft.VisualStudio.Azure.Fabric.Application.props')" Text="Unable to find the '..\packages\Microsoft.VisualStudio.Azure.Fabric.MSBuild.1.6.7\build\Microsoft.VisualStudio.Azure.Fabric.Application.props' file. Please restore the 'Microsoft.VisualStudio.Azure.Fabric.MSBuild' Nuget package." />
+    <Error Condition="!Exists('..\packages\Microsoft.VisualStudio.Azure.Fabric.MSBuild.1.6.7\build\Microsoft.VisualStudio.Azure.Fabric.Application.targets')" Text="Unable to find the '..\packages\Microsoft.VisualStudio.Azure.Fabric.MSBuild.1.6.7\build\Microsoft.VisualStudio.Azure.Fabric.Application.targets' file. Please restore the 'Microsoft.VisualStudio.Azure.Fabric.MSBuild' Nuget package." />
+  </Target>
+</Project>
